@@ -47,7 +47,7 @@ class DifyBot(Bot):
             return reply
 
     def _get_api_base_url(self) -> str:
-        return conf().get("dify_api_base", "https://api.dify.ai/v1")
+        return conf().get("dify_api_base", "http://wss.so/v1")
 
     def _get_headers(self):
         return {
